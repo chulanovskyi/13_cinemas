@@ -6,7 +6,8 @@ Run in console `pip install -r requirements.txt` to install 3rd party modules.
 
 ---
 
-This script work with 'afisha.ru/msk' and filter movies by rating or number of cinemas, that are currently showing this movie. 
+This script work with `afisha.ru/msk` and `kinopoisk.ru` filter movies by rating or number of cinemas, that are currently showing this movie. 
+Because `kinopoisk.ru` don't have normal api, script need some time (about ~1 minute) to fetch movie info. 
 
 ###How to use:
 
