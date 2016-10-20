@@ -11,34 +11,33 @@ Because `kinopoisk.ru` don't have normal api, script need some time (about ~1 mi
 
 ###How to use:
 
-You can edit in-script constants to get result as you want.
+Script have one optional argument:
 
-| Constant | Description |
-| --- | --- |
-| `MOVIES_TO_PRINT` | how many top movies need to be printed|
+- `--movies` - determines the size of the movies list to be printed;
 
+**Note!** By default `--movies` will set to 10, if not specified.
 
-Что не так
-> You can edit in-script constants to get result as you want.
-Попробуй вынести их в args, скрипт станет удобнее в использовании
+####INPUT
 
-def parse_afisha_list(raw_html):
-...
-return movies_info
-название плохо доносит смысл происходящего. Слишком общо и неконкретно
+At the start, script will ask you to choose the sort method (enter `1` or `2`):
+```
+Sort movies by:
+1. Rating
+2. Cinemas
 
-Вынеси в urls в глобальные константы
+$ 1
+```
 
-fetch_movie_info меняет входящий аргумент info. Такого быть не должно
-https://devman.org/encyclopedia/decomposition/decomposition_pure_functions/
-
-В python3 не нужна конструкция u'некий текст не на латинице'
-
-get_sort_attr - плохое название, используй лучше input_sort_attrs - оно говорит о том что функция взаимодействует с вводом/выводом
-
-get_sort_attr
-...
-exit(11)
-это было неожиданно... а раз так - перепиши, код должен быть легко предсказуем, что снижает риск ошибки при его сопровождении/доработке
-
-Магические числа – зло. Вынеси непонятную константу в переменную с говорящим названием. ('\xa0').
+####OUTPUT
+```
+1. Мужчины (8.163)
+2. Золотая лихорадка (8.069)
+3. Бал (7.97)
+4. Весна, лето, осень, зима... и снова весна (7.908)
+5. Москва, я терплю тебя (7.889)
+6. Вторая жизнь Уве (7.88)
+7. Винил (7.846)
+8. Сестра его дворецкого (7.833)
+9. Сияние (7.832)
+10. Это всего лишь конец света (7.812)
+```
