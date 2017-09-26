@@ -1,6 +1,6 @@
 # 13_cinemas
 
-###Prerequisites:
+### Prerequisites:
 
 Run in console `pip install -r requirements.txt` to install 3rd party modules.
 
@@ -9,7 +9,7 @@ Run in console `pip install -r requirements.txt` to install 3rd party modules.
 This script work with `afisha.ru/msk` and `kinopoisk.ru` filter movies by rating or number of cinemas, that are currently showing this movie. 
 Because `kinopoisk.ru` don't have normal api, script need some time (about ~1 minute) to fetch movie info. 
 
-###How to use:
+### How to use:
 
 Script have one optional argument:
 
@@ -17,7 +17,7 @@ Script have one optional argument:
 
 **Note!** By default `--movies` will set to 10, if not specified.
 
-####INPUT
+#### INPUT
 
 At the start, script will ask you to choose the sort method (enter `1` or `2`):
 ```
@@ -28,7 +28,7 @@ Sort movies by:
 $ 1
 ```
 
-####OUTPUT
+#### OUTPUT
 ```
 1. Мужчины (8.163)
 2. Золотая лихорадка (8.069)
